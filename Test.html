@@ -6,6 +6,8 @@
     <title>Portfolio Numérique - Lukas Osorio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="CSS/style_main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
@@ -33,10 +35,21 @@
     </nav>
     
     <!-- Main -->
-    <header id="accueil" class="bg-primary text-white text-center py-5 mt-5">
+    <header id="accueil" class="text-white text-center py-5">
         <div class="container">
-            <h2 class="fw-bold">Lukas Osorio</h2>
-            <p class="fs-4">Étudiant en Réseau et Informatique</p>
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start">
+                    <h1 class="display-4 fw-bold mb-3">Lukas Osorio</h1>
+                    <p class="lead mb-4">Étudiant en BTS SIO option SISR</p>
+                    <div class="d-flex gap-3 justify-content-lg-start justify-content-center">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Me contacter</a>
+                        <a href="#projets" class="btn btn-outline-light btn-lg px-4">Mes projets</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Images/profile.jpg" alt="Lukas Osorio" class="img-fluid rounded-circle shadow" style="max-height: 300px;">
+                </div>
+            </div>
         </div>
     </header>
     
@@ -242,49 +255,86 @@
     </section>
     
     <!-- Certificats -->
-    <section id="certifications" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Certifications</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification : CCNA1</h5>
-                        <a href="Images/Certificat_CCNA1_OSORIO.pdf" class="btn btn-primary" target="_blank">Voir le PDF</a>
+<section id="certifications" class="py-5">
+    <div class="container">
+        <div class="section-title">
+            <h2>Certifications</h2>
+            <p>Mes certifications et formations complémentaires</p>
+        </div>
+        
+        <!-- Une seule row pour toutes les certifications -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Certification 1 -->
+            <div class="col">
+                <div class="card h-100 fade-in">
+                    <div class="card-body text-center">
+                        <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">CCNA1</h5>
+                        <p class="card-text">Certification Cisco Networking</p>
+                        <a href="Images/Certificat_CCNA1_OSORIO.pdf" class="btn btn-outline-primary" target="_blank">
+                            <i class="fas fa-eye me-2"></i> Voir le certificat
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification : Cybersecurité Les bases</h5>
-                        <a href="Images/Certificat_Cybersecurite_Osorio.pdf" class="btn btn-primary" target="_blank">Voir le PDF</a>
+            </div>
+            
+            <!-- Certification 2 -->
+            <div class="col">
+                <div class="card h-100 fade-in">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Cybersécurité</h5>
+                        <p class="card-text">Les bases de la cybersécurité</p>
+                        <a href="Images/Certificat_Cybersecurite_Osorio.pdf" class="btn btn-outline-success" target="_blank">
+                            <i class="fas fa-eye me-2"></i> Voir le certificat
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification : MOOC ANSSI</h5>
-                        <a href="Images/Attestation_MOOC_OSORIO.pdf" class="btn btn-primary" target="_blank">Voir le PDF</a>
+            </div>
+            
+            <!-- Certification 3 -->
+            <div class="col">
+                <div class="card h-100 fade-in">
+                    <div class="card-body text-center">
+                        <i class="fas fa-lock fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title">MOOC ANSSI</h5>
+                        <a href="Images/Attestation_MOOC_OSORIO.pdf" class="btn btn-outline-warning" target="_blank">
+                            <i class="fas fa-eye me-2"></i> Voir le certificat
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification : Linux Les bases</h5>
-                        <a href="Images/Attestation_Decouverte_Osorio.pdf" class="btn btn-primary" target="_blank">Voir le PDF</a>
+            </div>
+            
+            <!-- Certification 4 -->
+            <div class="col">
+                <div class="card h-100 fade-in">
+                    <div class="card-body text-center">
+                        <i class="fab fa-linux fa-3x text-info mb-3"></i>
+                        <h5 class="card-title">Linux</h5>
+                        <p class="card-text">Les bases de Linux</p>
+                        <a href="Images/Attestation_Decouverte_Osorio.pdf" class="btn btn-outline-info" target="_blank">
+                            <i class="fas fa-eye me-2"></i> Voir le certificat
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification : CCNAv7 Introduction au réseau</h5>
-                        <a href="Images/CCNAv7_Osorio.pdf" class="btn btn-primary" target="_blank">Voir le PDF</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm p-3">
-                        <h5>Certification 6</h5>
-                        <a href="#" class="btn btn-primary" target="_blank">Voir le PDF</a>
+            </div>
+            
+            <!-- Certification 5 -->
+            <div class="col">
+                <div class="card h-100 fade-in">
+                    <div class="card-body text-center">
+                        <i class="fas fa-network-wired fa-3x text-danger mb-3"></i>
+                        <h5 class="card-title">CCNAv7</h5>
+                        <p class="card-text">Introduction au réseau</p>
+                        <a href="Images/CCNAv7_Osorio.pdf" class="btn btn-outline-danger" target="_blank">
+                            <i class="fas fa-eye me-2"></i> Voir le certificat
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact -->
     <section id="contact" class="py-5 bg-white">
