@@ -6,6 +6,8 @@
     <title>Portfolio Numérique - Lukas Osorio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="CSS/style_main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
@@ -33,29 +35,60 @@
     </nav>
     
     <!-- Main -->
-    <header id="accueil" class="bg-primary text-white text-center py-5 mt-5">
-        <div class="container">
-            <h2 class="fw-bold">Lukas Osorio</h2>
-            <p class="fs-4">Étudiant en Réseau et Informatique</p>
+    <header id="accueil" class="text-white">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 text-lg-start">
+                    <h1 class="display-1 fw-bold mb-4 text-shadow">Lukas Osorio</h1>
+                    <p class="lead mb-4 fs-2">Étudiant en BTS SIO option SISR</p>
+                    <div class="d-flex gap-3 justify-content-lg-start justify-content-center">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4 fw-bold">Me contacter</a>
+                        <a href="#projets" class="btn btn-outline-light btn-lg px-4 fw-bold">Mes projets</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     
-    <!-- Profil -->
-    <section id="profil" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Profil</h2>
-            <p class="text-muted">
-                Actuellement en deuxième année de <strong>BTS SIO</strong> option <strong>SISR</strong>, je me forme à l’administration des systèmes et à la gestion des réseaux informatiques. Depuis toujours, l’informatique me passionne, et ce cursus me permet de développer des compétences techniques solides tout en les appliquant concrètement en entreprise.
-                </p>
-                <p class="text-muted">
-                Avant d’intégrer ce BTS, j’ai obtenu un <strong>Bac Pro SN</strong> option <strong>RISC</strong>, qui m’a donné de bonnes bases en maintenance, en gestion d’infrastructures et en cybersécurité. Grâce à mes études et mes expériences professionnelles, j’ai appris à configurer et sécuriser des réseaux, administrer des serveurs, et assurer un support technique efficace.
-                </p>
-                <p class="text-muted">
-                J’aime résoudre des problèmes techniques, optimiser les infrastructures et explorer de nouvelles technologies. Curieux et motivé, je continue d’apprendre au quotidien, notamment sur les systèmes Windows et Linux, la virtualisation ou encore le cloud computing.
-            </p>
-            <p class="text-muted">
-                Mon objectif est d’évoluer dans le domaine des systèmes et réseaux, en me spécialisant pourquoi pas dans la cybersécurité ou l’administration cloud. Toujours prêt à relever de nouveaux défis, je suis à la recherche d’expériences enrichissantes pour renforcer mes compétences et grandir professionnellement.
-            </p>
+    <section id="profil" class="container text-center">
+        <h2 class="section-title">Mon Profil</h2>
+        <div class="row">
+            
+            
+            <!-- Carte 2 : Passions -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Mes Passions</h3>
+                    <ul class="passion-list">
+                        <li><i class="fas fa-futbol"></i>Sport</li>
+                        <li><i class="fas fa-book"></i> Manga</li>
+                        <li><i class="fas fa-music"></i> Musique Latine</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Carte 1 : Présentation -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-user"></i>
+                    <h3>Qui suis-je ?</h3>
+                    <p>Étudiant en 2ᵉ année de BTS SIO option SISR, je me spécialise dans l'administration des systèmes et réseaux.  
+                    Ayant toujours eu une curiosté vers l'informatique, j'ai donc décidé d'intégrer cette filière pour en faire mon metier.       
+                    Grâce à mes expériences en support et en gestion de parc informatique, j’ai acquis des compétences en 
+                    maintenance, sécurisation des systèmes et assistance aux utilisateurs.</p>
+                </div>
+            </div>
+            <!-- Carte 3 : Objectifs -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Objectifs Professionnels</h3>
+                    <p>J'ai pour ambition de continuer ma formation jusqu'au BAC +3, en acquierant mon Bachelor Systèmes, Réseaux et Cloud
+                    et ensuite pouvoir continuer en Bac +5 en visant le RCNP Niveau 7. 
+                    Cela me permettrais de pouvoir accéder a des postes comme Administrateur Système et Réseau ou Ingénieur Réseau</p>
+                </div>
+            </div>
         </div>
     </section>
 

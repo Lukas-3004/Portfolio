@@ -35,85 +35,117 @@
     </nav>
     
     <!-- Main -->
-    <header id="accueil" class="text-white text-center py-5">
-        <div class="container">
-            <div class="row align-items-center">
+    <header id="accueil" class="text-white">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6 text-lg-start">
-                    <h1 class="display-4 fw-bold mb-3">Lukas Osorio</h1>
-                    <p class="lead mb-4">Étudiant en BTS SIO option SISR</p>
+                    <h1 class="display-1 fw-bold mb-4 text-shadow">Lukas Osorio</h1>
+                    <p class="lead mb-4 fs-2">Étudiant en BTS SIO option SISR</p>
                     <div class="d-flex gap-3 justify-content-lg-start justify-content-center">
-                        <a href="#contact" class="btn btn-primary btn-lg px-4">Me contacter</a>
-                        <a href="#projets" class="btn btn-outline-light btn-lg px-4">Mes projets</a>
+                        <a href="#contact" class="btn btn-primary btn-lg px-4 fw-bold">Me contacter</a>
+                        <a href="#projets" class="btn btn-outline-light btn-lg px-4 fw-bold">Mes projets</a>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="Images/profile.jpg" alt="Lukas Osorio" class="img-fluid rounded-circle shadow" style="max-height: 300px;">
                 </div>
             </div>
         </div>
     </header>
     
-    <!-- Profil -->
-    <section id="profil" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Profil</h2>
-            <p class="text-muted">
-                Actuellement en deuxième année de <strong>BTS SIO</strong> option <strong>SISR</strong>, je me forme à l’administration des systèmes et à la gestion des réseaux informatiques. Depuis toujours, l’informatique me passionne, et ce cursus me permet de développer des compétences techniques solides tout en les appliquant concrètement en entreprise.
-                </p>
-                <p class="text-muted">
-                Avant d’intégrer ce BTS, j’ai obtenu un <strong>Bac Pro SN</strong> option <strong>RISC</strong>, qui m’a donné de bonnes bases en maintenance, en gestion d’infrastructures et en cybersécurité. Grâce à mes études et mes expériences professionnelles, j’ai appris à configurer et sécuriser des réseaux, administrer des serveurs, et assurer un support technique efficace.
-                </p>
-                <p class="text-muted">
-                J’aime résoudre des problèmes techniques, optimiser les infrastructures et explorer de nouvelles technologies. Curieux et motivé, je continue d’apprendre au quotidien, notamment sur les systèmes Windows et Linux, la virtualisation ou encore le cloud computing.
-            </p>
-            <p class="text-muted">
-                Mon objectif est d’évoluer dans le domaine des systèmes et réseaux, en me spécialisant pourquoi pas dans la cybersécurité ou l’administration cloud. Toujours prêt à relever de nouveaux défis, je suis à la recherche d’expériences enrichissantes pour renforcer mes compétences et grandir professionnellement.
-            </p>
-        </div>
-    </section>
-
-
-    
-    <!-- BTS SIO-->
-    <section id="bts" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Qu'est-ce que le <b>BTS SIO 🎓</b> ?</h2>
-            <p>Avant de commencer à parler de moi, je vous propose de présenter en premier lieu ma filière dont je suis affecté.</p>
-            <p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (<b class="neon2">BTS SIO</b>) s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur, pour ensuite intégrer directement le marché du travail ou poursuivre des études dans le domaine de l'informatique.</p>
-            <h4 class="mt-4">Le BTS SIO propose deux spécialités :</h4>
-            <div class="row justify-content-around spec_bts mt-4">
-                <div class="col-xl-5 bts_sisr">
-                    <h4><i class="icofont-network"></i> Option <b>SISR</b> </h4>
-                    <p>L’option Solution d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). Les diplômés peuvent occuper des postes comme :</p>
-                    <ul>
-                        <li>Administrateur systèmes et réseaux</li>
-                        <li>Ingénieur systèmes et réseaux</li>
-                        <li>Architecte réseau</li>
-                        <li>Support systèmes et réseaux</li>
-                        <li>Consultant en cybersécurité</li>
-                        <li>Technicien SOC (Centre d'Opérations de Sécurité)</li>
+    <section id="profil" class="container text-center">
+        <h2 class="section-title">Mon Profil</h2>
+        <div class="row">
+             
+            <!-- Carte 2 : Passions -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Mes Passions</h3>
+                    <ul class="passion-list">
+                        <li><i class="fas fa-futbol"></i>Sport</li>
+                        <li><i class="fas fa-book"></i> Manga</li>
+                        <li><i class="fas fa-music"></i> Musique Latine</li>
                     </ul>
                 </div>
-                <div class="col-xl-5 bts_slam">
-                    <h4><i class="icofont-code"></i> Option <b>SLAM</b> </h4>
-                    <p>L’option Solutions Logicielles et Applications Métiers forme des spécialistes en développement logiciel, intégration et gestion d’applications métiers. Les diplômés peuvent accéder à des métiers comme :</p>
-                    <ul>
-                        <li>Développeur d'applications</li>
-                        <li>Développeur web</li>
-                        <li>Administrateur de bases de données</li>
-                        <li>Développeur SQL</li>
-                        <li>Architecte logiciel</li>
-                        <li>Expert en cybersécurité des applications</li>
+            </div>
+            <!-- Carte 1 : Présentation -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-user"></i>
+                    <h3>Qui suis-je ?</h3>
+                    <p>Étudiant en 2ᵉ année de BTS SIO option SISR, je me spécialise dans l'administration des systèmes et réseaux.  
+                    Ayant toujours eu une curiosté vers l'informatique, j'ai donc décidé d'intégrer cette filière pour en faire mon metier.       
+                    Grâce à mes expériences en support et en gestion de parc informatique, j’ai acquis des compétences en 
+                    maintenance, sécurisation des systèmes et assistance aux utilisateurs.</p>
+                </div>
+            </div>
+            <!-- Carte 3 : Objectifs -->
+            <div class="col-md-4">
+                <div class="profile-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Objectifs Professionnels</h3>
+                    <p>J'ai pour ambition de continuer ma formation jusqu'au BAC +3, en acquierant mon Bachelor Systèmes, Réseaux et Cloud
+                    et ensuite pouvoir continuer en Bac +5 en visant le RCNP Niveau 7. 
+                    Cela me permettrais de pouvoir accéder a des postes comme Administrateur Système et Réseau ou Ingénieur Réseau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <!-- BTS SIO -->
+    <section id="bts" class="container text-center">
+        <h2 class="section-title">BTS SIO - Services Informatiques aux Organisations</h2>
+        <p class="intro-text">
+            Avant de parler de mon parcours, voici une présentation rapide de ma filière.
+            Le <b class="neon2">BTS SIO</b> est une formation en deux ans qui prépare aux métiers de l'informatique,
+            avec deux spécialités : administration des systèmes et réseaux (<b>SISR</b>) ou développement logiciel (<b>SLAM</b>).
+        </p>
+
+        <div class="row justify-content-center mt-5">
+            <!-- Option SISR -->
+            <div class="col-md-5">
+                <div class="bts-option sisr">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Option SISR</h3>
+                    <p>
+                        L’option Solutions d’Infrastructure, Systèmes et Réseaux forme des experts en gestion et sécurisation des infrastructures informatiques.
+                        Cette spécialisation est idéale pour ceux qui souhaitent travailler dans la mise en place, la maintenance et la sécurisation des réseaux.
+                    </p>
+                    <h4>Débouchés :</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-server"></i> Administrateur systèmes et réseaux</li>
+                        <li><i class="fas fa-shield-alt"></i> Consultant en cybersécurité</li>
+                        <li><i class="fas fa-cogs"></i> Ingénieur systèmes et réseaux</li>
+                        <li><i class="fas fa-cloud"></i> Architecte Cloud</li>
+                        <li><i class="fas fa-laptop-medical"></i> Technicien SOC (Sécurité informatique)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Option SLAM -->
+            <div class="col-md-5">
+                <div class="bts-option slam">
+                    <i class="fas fa-code"></i>
+                    <h3>Option SLAM</h3>
+                    <p>
+                        L’option Solutions Logicielles et Applications Métiers est destinée aux étudiants qui veulent se spécialiser dans la conception, le développement et la maintenance des logiciels et applications.
+                        Cette option permet d’acquérir des compétences en programmation, gestion de bases de données et cybersécurité des applications.
+                    </p>
+                    <h4>Débouchés :</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-laptop-code"></i> Développeur d'applications</li>
+                        <li><i class="fas fa-database"></i> Administrateur de bases de données</li>
+                        <li><i class="fas fa-cogs"></i> Ingénieur DevOps</li>
+                        <li><i class="fas fa-shield-alt"></i> Expert en cybersécurité des applications</li>
+                        <li><i class="fas fa-cloud"></i> Architecte logiciel</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Parcours -->
-    <section id="parcours" class="py-5 bg-white">
-        <div class="container text-center">
-            <h2 class="mb-4">Parcours</h2>
+    <section id="parcours" class="container text-center">
+        <h2 class="section-title">Parcours</h2>
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-md-6">
@@ -201,14 +233,11 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     
     <!-- Stages -->
-    <section id="stages" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Stages</h2>
-            
+    <section id="stages" class="container text-center">
+        <h2 class="section-title">Stages</h2>
             <div class="row">
                 <!-- Stage de 1ère année -->
                 <div class="col-md-6">
@@ -224,13 +253,11 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     
     <!-- Projets -->
-    <section id="projets" class="py-5 bg-white">
-        <div class="container text-center">
-            <h2 class="mb-4">Projets</h2>
+    <section id="projets" class="container text-center">
+        <h2 class="section-title">Projets</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm p-3">
@@ -251,7 +278,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     
     <!-- Certificats -->
