@@ -259,10 +259,16 @@ section {
 }
 
 
-/* Timeline Parcours*/
+/* Section Parcours */
+#parcours {
+    background: white;
+    padding: 60px 0;
+}
+
+/* Timeline */
 .timeline {
     position: relative;
-    padding-left: 50px;
+    padding-left: 30px;
     list-style: none;
 }
 
@@ -271,41 +277,59 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20px;
-    width: 2px;
-    background: var(--secondary);
+    left: 15px;
+    width: 4px;
+    background: var(--primary);
+    border-radius: 2px;
 }
 
 .timeline li {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .timeline .title {
     position: absolute;
     left: -50px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     text-align: center;
-    background: var(--secondary);
+    background: var(--primary);
     color: white;
     border-radius: 50%;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .timeline .details {
     background: white;
-    padding: 1.5rem;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .timeline .details:hover {
     transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
+
+/* Ajustement pour petits écrans */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline .title {
+        left: -40px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+
 
 /* Cards Certifications */
 .card {
@@ -352,29 +376,3 @@ footer {
     animation: fadeIn 0.6s ease forwards;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    header h2 {
-        font-size: 2rem;
-    }
-    
-    header p {
-        font-size: 1.2rem;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-    }
-    
-    .timeline::before {
-        left: 15px;
-    }
-    
-    .timeline .title {
-        left: -40px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 0.8rem;
-    }
-}
