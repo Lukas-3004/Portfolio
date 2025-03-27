@@ -262,7 +262,7 @@ section {
 /* Section Parcours */
 #parcours {
     background: white;
-    padding: 60px 0;
+    padding: 5rem 0;
 }
 
 /* Timeline */
@@ -328,6 +328,70 @@ section {
         line-height: 30px;
         font-size: 12px;
     }
+}
+
+/* Stages*/
+#stages {
+    background-color: white;
+    padding: 5rem;
+}
+
+/* Style des cartes de stage */
+.stage-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image en haut des cartes */
+.stage-logo {
+    width: 90px; /* Ajuste la taille du logo */
+    height: auto; /* Garde les proportions */
+    display: block; /* Supprime les marges inutiles */
+    margin: 0 auto 10px; /* Centre le logo et ajoute un espace en bas */
+}
+
+
+
+
+/* Contenu des cartes */
+.stage-body {
+    padding: 20px;
+}
+
+.stage-body h3 {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stage-body p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Boutons */
+.btn-stage {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-stage:hover {
+    background: #0056b3;
 }
 
 
