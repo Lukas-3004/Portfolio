@@ -458,11 +458,10 @@ section {
     transition: background-color 0.3s ease;
 }
 
-<<<<<<< HEAD
 /* Section Contact */
 .contact-section {
     background: linear-gradient(135deg, #007bff, #0056b3);
-=======
+}
 .card:hover .card-body {
     background-color: rgba(0, 0, 0, 0.02); 
 }
@@ -546,101 +545,6 @@ section {
 }
 
 
-
-
-
-
-/* Contact */
-#contact {
-    background: linear-gradient(135deg, var(--primary), var(--dark));
->>>>>>> 44cffe0289fbc5ac420701335bc3a49b3a9c4f8a
-    color: white;
-    padding: 5rem 0;
-    text-align: center;
-}
-
-/* Titres et Infos */
-.section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.contact-info {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact-info i {
-    margin-right: 10px;
-}
-
-/* Formulaire */
-.contact-form {
-    max-width: 500px;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #333;
-}
-
-.contact-form textarea {
-    min-height: 120px;
-    resize: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-/* Bouton Envoyer */
-.btn-contact {
-    background: #ffcc00;
-    color: #333;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-contact:hover {
-    background: #ffaa00;
-    transform: scale(1.05);
-}
-
-/* Bouton Télécharger CV */
-.btn-cv {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-cv:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.08);
-}
 
 
 /* Footer */
