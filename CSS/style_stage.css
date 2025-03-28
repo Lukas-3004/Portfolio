@@ -1,0 +1,137 @@
+/* Style de base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+h2.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3.mission-title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Logo */
+.logo-container img {
+    max-width: 200px; 
+    border-radius: 15px;    
+}
+
+/* Mise en page */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Mission box */
+.mission-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Liste des missions */
+.mission-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-box ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Sections et alignements */
+.introduction, .mission-box {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.introduction p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Mise en page des images côte à côte */
+.mission-box-images {
+    display: flex;
+    justify-content: space-between; /* Espace entre les images */
+    gap: 20px; /* Ajoute de l'espace entre les images */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne sur petits écrans */
+}
+
+/* Style des images dans les boîtes de mission */
+.mission-box-images img {
+    width: 48%; /* Laisse 2% de marge entre les images */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Conclusion */
+.conclusion {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.conclusion h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.conclusion p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+
+
+/* Résponsive Design pour les petites tailles d'écran */
+@media (max-width: 768px) {
+    .mission-box-images img {
+        width: 100%; /* Les images prennent toute la largeur sur les petits écrans */
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    padding: 2rem 0;
+}
