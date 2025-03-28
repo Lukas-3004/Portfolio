@@ -118,7 +118,7 @@
                         <li><i class="fas fa-cogs"></i> Iptables (Pare-feu Linux)</li>
                         <li><i class="fas fa-cloud"></i> Active Directory (Gestion des utilisateurs & GPO)</li>
                         <li><i class="fas fa-laptop-medical"></i> PowerShell (Scripts d'automatisation)</li>
-                        <li><i class="fas fa-network-wired"></i> Réseaux TCP/IP (Configuration & Sécurité)</li>
+                        <li><i class="fas fa-network-wired"></i> Cisco (Configuration Switchs, IP/TCP)</li>
                         <li><i class="fas fa-code"></i> Linux (Debian, Kali Linux, Administration système)</li>
                         <li><i class="fas fa-cloud-upload-alt"></i> Virtualisation (VMware, PfSense)</li>
                     </ul><br>
@@ -146,9 +146,9 @@
                         <li><i class="fas fa-code"></i> Développement Web (HTML, CSS, JavaScript, PHP)</li>
                         <li><i class="fas fa-database"></i> Gestion de bases de données (MySQL, SQL Server)</li>
                         <li><i class="fas fa-laptop-code"></i> Programmation Orientée Objet (Java, C#)</li>
-                        <li><i class="fas fa-cogs"></i> Frameworks (Symfony, Laravel, Spring)</li>
+                        <li><i class="fas fa-cogs"></i> Frameworks (Laravel, Spring)</li>
                         <li><i class="fas fa-cloud"></i> Développement d'applications mobiles(Android, iOS)</li>
-                        <li><i class="fas fa-server"></i> Serveurs et Hébergement (Apache, Nginx, Docker)</li>
+                        <li><i class="fas fa-server"></i> Serveurs et Hébergement (Apache, Nginx)</li>
                         <li><i class="fas fa-users"></i> Gestion de projet (Méthodes agiles, Scrum, Git)</li>
                         <li><i class="fas fa-tools"></i> Intégration continue (GitHub, GitLab)</li>
                     </ul><br>
@@ -484,12 +484,18 @@
         
 
         <!-- Formulaire de contact -->
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Votre nom" required>
-            <input type="email" name="email" placeholder="Votre email" required>
-            <textarea name="message" placeholder="Votre message" required></textarea>
-            <button type="submit" class="btn-contact">Envoyer</button>
-        </form>
+<form action="https://formspree.io/f/xldjwbvp" method="POST" class="contact-form">
+    <label for="email">
+        <b>Mettez votre adresse e-mail:</b>
+        <input type="email" name="email" id="email" required>
+    </label>
+    <label for="message">
+        <b>Ecrivez votre message:</b>
+        <textarea name="message" id="message" required></textarea>
+    </label>
+    <button type="submit" class="btn-contact">Envoyez</button>
+</form>
+
 
         <!-- Bouton Télécharger CV -->
         <a href="Images/CV_OSORIO_V7.pdf" download class="btn-cv">

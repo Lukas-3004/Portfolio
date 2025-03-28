@@ -293,8 +293,7 @@ section {
 }
 
 .bts-option ul li i {
-    margin-right: 10px;
-    color: #28a745; /* Couleur verte pour évoquer la réussite */
+    margin-right: 10px; 
     font-size: 1.2rem;
 }
 
@@ -304,6 +303,11 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+.list-unstyled li i{
+    margin-right: 10px; 
+    color: var(--success);
+    font-size: 1.2rem;
+}
 
 /* Liste des compétences */
 .competences-list {
@@ -331,7 +335,7 @@ section {
 
 .competences-list li i {
     margin-right: 10px;
-    color: #007bff;
+    color: var(--accent);
     font-size: 1.2rem;
 }
 
@@ -737,54 +741,88 @@ section {
 }
 
 
-/* Formulaire */
+/* Style global du formulaire */
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 1.5rem;
+    gap: 16px; /* Espace plus large pour une meilleure lisibilité */
+    margin-top: 2rem;
+    max-width: 1000px; /* Limiter la largeur pour une meilleure lisibilité */
+    margin-left: auto;
+    margin-right: auto; /* Centrer le formulaire */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fond clair pour le formulaire */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile pour donner de la profondeur */
+    width: 100%; 
 }
 
+/* Style des inputs et textareas */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1rem;
     color: #333;
-    background: white;
+    background: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animation plus douce sur focus */
 }
 
+/* Ajout d'un peu de padding à l'intérieur des éléments */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa; /* Placeholder plus clair */
+}
+
+/* Textarea spécifique */
 .contact-form textarea {
-    min-height: 120px;
-    resize: none;
+    min-height: 150px; /* Augmenter la hauteur minimale de la textarea */
+    resize: vertical; /* Permet à l'utilisateur de redimensionner */
 }
 
+/* Focus (lorsqu'un champ est sélectionné) */
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    border-color: #3498db; /* Changer la couleur de bordure au focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Ombre douce lors du focus */
 }
 
-/* Bouton Envoyer */
+/* Style du bouton envoyer */
 .btn-contact {
-    background: #007bff;
+    background: #3498db;
     color: white;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* S'étendre sur toute la largeur */
 }
 
+/* Effet au survol du bouton */
 .btn-contact:hover {
-    background: #0056b3;
-    transform: scale(1.05);
+    background: #2980b9; /* Couleur plus sombre au survol */
+    transform: translateY(-3px); /* Effet de légère élévation */
 }
+
+/* Affichage sur mobile (responsivité) */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 16px;
+    }
+
+    .btn-contact {
+        font-size: 1rem; /* Ajuster la taille de la police pour les petits écrans */
+    }
+}
+
 
 /* Bouton Télécharger CV */
 .btn-cv {
