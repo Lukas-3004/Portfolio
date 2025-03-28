@@ -7,6 +7,7 @@
     --text: #333;
     --text-light: #6c757d;
     --success: #28a745;
+    --myboy: #FFD700;
 }
 
 body {
@@ -127,6 +128,42 @@ section {
     border-radius: 2px;
 }
 
+.pmy {
+    text-align: center;
+}
+
+.exp {
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.exp::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--accent);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.for {
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.for::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--myboy);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
 /* Profil */
 #profil {
     background-color: white;
@@ -204,7 +241,7 @@ section {
 .bts-option {
     background: white;
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -279,7 +316,7 @@ section {
     bottom: 0;
     left: 15px;
     width: 4px;
-    background: var(--primary);
+    background: #000080;
     border-radius: 2px;
 }
 
@@ -295,7 +332,7 @@ section {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: var(--primary);
+    background: #000080;
     color: white;
     border-radius: 50%;
     font-weight: bold;
@@ -339,29 +376,26 @@ section {
 /* Style des cartes de stage */
 .stage-card {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .stage-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Image en haut des cartes */
+
 .stage-logo {
-    width: 90px; /* Ajuste la taille du logo */
-    height: auto; /* Garde les proportions */
-    display: block; /* Supprime les marges inutiles */
-    margin: 0 auto 10px; /* Centre le logo et ajoute un espace en bas */
+    width: 90px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 10px; 
 }
 
-
-
-
-/* Contenu des cartes */
 .stage-body {
     padding: 20px;
 }
@@ -379,39 +413,137 @@ section {
     margin-bottom: 15px;
 }
 
-/* Boutons */
-.btn-stage {
-    background: #007bff;
+.btn-project {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
 }
 
-.btn-stage:hover {
-    background: #0056b3;
+.btn-project:hover {
+    background: linear-gradient(135deg, #0056b3, #003f8a);
+    transform: scale(1.08);
 }
 
+/* Certifications */
 
-/* Cards Certifications */
+#certifications {
+    background-color: white;
+    padding: 5rem;
+}
+
 .card {
     border: none;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
 }
 
 .card-body {
     padding: 1.5rem;
+    transition: background-color 0.3s ease;
 }
+
+.card:hover .card-body {
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+
+/* Section Projets */
+#projets {
+    background: white;
+    padding: 5rem 0;
+}
+
+/* Cartes des projets */
+.project-card {
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Effet au survol */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Titres des projets */
+.project-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Logos */
+.project-logo {
+    width: 120px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 15px; 
+}
+
+/* Texte */
+.project-card p {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+
+.btn-project {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-project:hover {
+    background: linear-gradient(135deg, #0056b3, #003f8a);
+    transform: scale(1.08);
+}
+
+/* Uniformisation des cartes */
+.d-flex.align-items-stretch .project-card {
+    height: 100%;
+}
+
+
+
+
+
 
 /* Contact */
 #contact {
