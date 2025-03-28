@@ -136,3 +136,110 @@ footer {
     padding: 2rem 0;
 }
 
+
+/* Style de la barre de navigation */
+.navbar {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+}
+
+/* Style du bouton de retour */
+.return-btn {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Icône à gauche */
+.return-btn i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.return-btn:hover {
+    color: #3498db !important;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.return-btn:hover i {
+    transform: translateX(-3px);
+}
+
+
+
+/* Style amélioré du titre */
+.text-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* Effet de surbrillance sous le texte */
+.text-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 50%;
+    height: 4px;
+    background: #3498db;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.text-title:hover::after {
+    width: 80%;
+}
+
+
+/* Style du lien "Haut de la page" */
+.nav-link {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Enlever le soulignement par défaut des liens */
+}
+
+/* Icône à gauche du lien "Haut de la page" */
+.nav-link i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.nav-link:hover {
+    color: #3498db !important;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.nav-link:hover i {
+    transform: translateX(-3px);
+}
+
+/* Style des éléments de la barre de navigation */
+.navbar .nav-item {
+    list-style: none; /* Retirer les puces des éléments de liste */
+}
