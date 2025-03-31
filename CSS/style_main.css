@@ -884,7 +884,9 @@ section {
 /* Footer */
 footer {
     background-color: var(--dark);
+    color: white;
     padding: 2rem 0;
+    margin-top: 3rem;
 }
 
 /* Animations */

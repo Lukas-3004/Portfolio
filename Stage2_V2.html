@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Rectorat de Paris</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS/style_stage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style_stage.css">
 </head>
 <body>
 
-    <!-- Bouton de retour -->
-<nav class="navbar navbar-dark bg-dark fixed-top shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand return-btn" href="index.html">
-            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-arrow-left me-2"></i>Retour
         </a>
-        <li class="nav-item">
-            <a class="nav-link return-btn" href="#Haut">
-                Haut de la page
-            </a>
-        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#missions">Missions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
 
-    <section id="Haut"></section>
+    
     <div class="container mt-5">
         <div class="logo-container mb-4">
             <img src="Images/Logo_rect.png" alt="Logo Rectorat de Paris" class="img-fluid">
@@ -34,7 +47,7 @@
             <h1 class="display-4 text-title">Rectorat de Paris</h1>
         </div>
 
-        <section class="introduction">
+        <section id="introduction"   class="introduction">
             <h2 class="section-title">Introduction</h2>
             <p><strong>Présentation du Rectorat de Paris</strong></p>
             <p>J’ai fait un stage de 8 semaines en tant que technicien support au Rectorat de Paris. C’est une administration qui gère les écoles et lycées de la région.</p>
@@ -45,6 +58,7 @@
 
         <div class="row">
             <div class="col-md-12">
+                <section id="missions"></section>
                 <div class="mission-box">
                     <h3 class="mission-title">Préparation des PC pour les utilisateurs</h3>
                     <p>Lors de cette mission, j’ai été chargé de préparer et configurer les PC destinés aux employés du rectorat. Cette étape était essentielle pour garantir que chaque utilisateur dispose d’un environnement de travail fonctionnel et sécurisé.</p>
@@ -98,7 +112,7 @@
         </div>
 
         <!-- Section Conclusion -->
-        <section class="conclusion">
+        <section id="conclusion" class="conclusion">
             <h2 class="section-title">Conclusion</h2>
             <p>Ce stage m’a permis d'apprendre beaucoup sur le support informatique et la gestion du matériel dans une grande institution. J’ai acquis des compétences techniques en préparation et configuration de PC, ainsi qu’en gestion de tablettes et de serveurs.</p>
             <p>Ce stage m’a aussi permis de travailler directement avec les utilisateurs et de comprendre l'importance de la réactivité et de l’écoute dans la résolution de leurs problèmes techniques.</p>
@@ -108,9 +122,24 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Lukas OSORIO. Tous droits réservés.</p>
-    </footer>
+<footer class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Lukas Osorio</h5>
+                <p>Étudiant en BTS SIO option SISR</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="https://www.linkedin.com/in/lukasosorio/" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/Lukas-3004" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                <a href="mailto:lukasosori@gmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+            </div>
+        </div>
+        <hr class="my-3 bg-light">
+        <p class="mb-0 text-center">&copy; 2024 Tous droits réservés</p>
+    </div>
+</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
